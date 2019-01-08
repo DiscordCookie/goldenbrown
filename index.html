@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>idk</title>
+    <style>
+        .flipped {
+            background-image: url('backgroundF.png') 
+        }
+        body{
+            background-image: url('background.png');
+        }
+
+    </style>
+</head>
+<body>
+    <audio autoplay>
+        <source src="golden_brown.mp3" type="audio/mp3">
+    </audio> 
+    <script>
+        window.onload = () => {
+            setInterval(()=>{
+                document.getElementsByTagName('body')[0].classList.toggle("flipped");
+            },1000)
+        }
+    </script>
+</body>
+</html>
